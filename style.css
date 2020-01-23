@@ -1,0 +1,345 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #d3e7f9
+
+}
+
+html {
+
+    font-size: 62.5%;
+
+    box-sizing: border-box;
+
+  }
+
+  
+
+  *, *::before, *::after {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: inherit;
+
+  }
+
+
+
+html, body {
+
+    height: 100%;
+
+    margin: 0;
+
+}
+
+
+
+nav.titlebar {
+
+    display: flex;
+
+}
+
+
+
+nav.leftmenu {
+
+    width: 20%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    float: left;
+
+}
+
+
+
+a:visited {
+
+    text-decoration: none;
+
+}
+
+
+
+  a:link {
+
+    text-decoration: none;
+
+}
+
+
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+button {
+
+    font-size: 2rem;
+
+    height: 60px;
+
+    border-radius: 5px;
+
+    border: 2px solid #838383;
+
+    color: #2575ee;
+
+    background-color: transparent;
+
+    text-shadow: 0 1px rgba(255,255,255,.4);
+
+}
+
+
+
+button:hover {
+
+    background-color: #a5acb5;
+
+    border: 2px solid #2575ee;
+
+}
+
+
+
+.add-button .minus-button .multiply-button .divide-button {
+
+    height: 100%;
+
+}
+
+
+
+
+
+.operator {
+
+    color: #000000;
+
+}
+
+
+
+.all-clear {
+
+    background-color: #E6E6FA;
+
+    border-color: #000000;
+
+    color: #000;
+
+    grid-column-start: 1;
+
+    grid-row-start: 5;
+
+
+
+}
+
+
+
+.all-clear:hover {
+
+    background-color: #DA70D6;
+
+    border-color: #000;
+
+}
+
+
+
+.backspace {
+
+    background-color: #E6E6FA;
+
+    border-color: #000000;
+
+    color: #000;
+
+    grid-column-start: 4;
+
+    grid-row-start: 5;
+
+}
+
+
+
+.backspace:hover {
+
+    background-color: #DA70D6;
+
+    border-color: #000;
+
+}
+
+
+
+.equals {
+
+    background-color: #800080;
+
+    border-color: #4B0082;
+
+    color: #fff;
+
+    grid-column: 4 / 5;
+
+    grid-row: 2 / 5;
+
+    height: 100%;
+
+}
+
+
+
+.equals:hover {
+
+    background-color: #8A2BE2;
+
+    border-color: #4B0082
+
+
+
+}
+
+
+
+.calc-container {
+
+    width: 400px;
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    border: 2px solid #ccc;
+
+    border-radius: 5px;
+
+    background-color: rgb(199, 199, 199);
+
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.calc-screen {
+
+    width: 100%;
+
+    font-size: 5rem;
+
+    height: 80px;
+
+    border: none;
+
+    background-color: #fff;
+
+    color: #000;
+
+    text-align: right;
+
+    padding: 0 20px 0 10px;
+
+}
+
+
+
+.row {
+
+    display: flex;
+
+    flex-direction: row;
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+.column {
+
+    flex-basis: 100%;
+
+    border: 1px solid black;
+
+}
+
+
+
+.titlebar > div {
+
+    flex: 1;
+
+    font-size: 24px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    color: #4d6ea0;
+
+    background-color: #d2d1d1;
+
+}
+
+
+
+.titlebar > .github {
+
+    background-color: #c8f034;
+
+    border: 2px solid #3c3c3c;
+
+}
+
+
+
+.titlebar > .title {
+
+    flex: 4;
+
+}
+
+
+
+.leftmenu > div {
+
+    font-size: 18px;
+
+    padding: 10px 8px;
+
+    text-align: center;
+
+    background-color: #d2d1d1;
+
+}
+
+
+
+.calc-keys {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 15px;
+
+    padding: 10px;
+
+}
